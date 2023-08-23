@@ -1,0 +1,100 @@
+@mixin font-face 
+($font-family, 
+$file-path, 
+$font-weight: normal, 
+$font-style: normal) 
+{
+    @font-face {
+        font-family: $font-family;
+        src: url(/Final_Project/fonts/#{$file-path}.ttf);
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+
+@include font-face("Montserrat", "Montserrat-Regular", 400);
+
+@include font-face("Montserrat", "Montserrat-Bold", 700);
+
+@mixin fontHeroRegular {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin fontH2Regular {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin fontH3Regular {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin fontH3Caps {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin fontH4Regular {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin fontParagraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@mixin fontParagraphSmall {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@mixin fontList {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@mixin fontIntroduction {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+@mixin fontLink12 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin assets {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin arrow {
+    position: absolute;
+    content: url(/Final_Project/images/Team-Arrow.svg);
+    left: calc(100% + 2px);
+    top: 50%;
+    transform: translateY(-50%);
+}

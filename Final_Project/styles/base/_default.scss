@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+body {
+    box-sizing: border-box;
+    
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+.bg-hil {
+    background: #1C4280;
+}
+
+.bg-or {
+    background: #FD9339;
+}
+
+.bg-infra {
+    background: #EAEAEA;
+}
+.bg-wanna {
+    background: #143646;
+}
+
+.bg-adtel {
+    background: #E2E2E4;
+}
+
+.bg-tapger {
+    background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30
+}
+
+.bg-3d {
+    background: #9E4DC3;
+}
+    
+.bg-click {
+    background: #C71C36;
+}
+
+.bg-eco {
+    background: #DCF3F9;
+}
+
+.bg-siti {
+    background: #282240;
+}
+
+.bg-art {
+    background: #1D4568;
+}
+
+.bg-ultimat {
+    background: #000;
+}

@@ -1,0 +1,55 @@
+.team {
+    padding: 80px 0 30px;
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    &__block {
+        padding: 30px;
+    }
+
+    &__link {
+        color: $color-regular;
+        @include fontH3Caps;
+        margin-bottom: 5px;
+        position: relative;
+        text-decoration: none;
+
+        &::after {
+            @include arrow;
+        }
+
+        &:hover {
+            color: $color-accent;
+            
+            &::after {
+                content: url(/Final_Project/images/Arrow-Accent.svg);
+            }
+        }
+    }
+
+    &__text {
+        background: $color-gradient-red-text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include fontHeroRegular;
+        margin-bottom: 30px;
+    }
+
+    &__signature {
+        color: $color-grey-text;
+        @include fontH4Regular;
+        margin-bottom: 6px;
+
+    }
+
+    &__post {
+        color: $color-grey-text;
+        @include fontParagraphSmall;
+    }
+}
